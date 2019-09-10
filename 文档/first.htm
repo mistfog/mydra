@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人生游戏：地球ol--冯祖豪的存档</title>
+    <link rel="stylesheet" href="css/style.css"  />
+</head>
+<body background="./images/my.png"> 
+<script type="text/javascript" src="jQyery.js">     
+    var sen =$("box0");
+    var angel = 0, lastTime = null;
+    function animate(time){
+        if(lastTime != null)
+            angel += (time - lastTime) * 0.001;
+        lastTime = time;
+        sen.css("border-radius","Math.sin(angel)*20"+"px");
+        requestAnimationFrame(animate);
+    }requestAnimationFrame(animate);
+</script> 
+    <div id="box0">
+        <h1>前情回顾</h1>
+            <p class="wdrp">从一个地图上找不到，离开那没人知道的地方。一步一步平移到了外面一点--更外面一点的地方。生活变得越来越不如人意，每达到一点别人眼中的好，越是不顺心的难过。要做的事情越堆越多，想做的事情越来越遥不可及。目前正充满失望地做着这令人绝望的东西。明明选的是不跟任何风，却似乎一直在跟风。我需要并等待着真正改天换地的变化</p>
+    </div>
+    <div id="pic">
+        <p class="wdrp">
+        这个世界就是「垃圾游戏」，规则和目标都不明了的无聊游戏。七十亿玩家不顾顺序恣意妄为地行动，赢得太多便要接受惩罚 输得太多也要接受惩罚，没有跳过的权利。保持沉默就会遭到更加猛烈的欺凌说得太多也会因为过于深入而被疏远，过于解读本意正中要害后也会被疏远。没有目标也没有参数甚至不知类别，就算服从固定的规则也要受到惩罚，无视规则的家伙却以一副唯我独尊的嘴脸处在高位。和这样的人生相比，无论怎样的游戏都再简单不过了</p>
+    </div>
+    <div id="box1">
+        <h2 align="center">杂七杂八</h2>
+        <div id="box">
+            <div class="face front"><h3>成就达成</h3></div>
+            <div class="face back"><a href="achievement.html">
+            成就是不可能有的，随便写点破事上去</a></div>
+        </div>
+        <div id="box">
+            <div class="face front"><h3>系统任务</h3></div>
+            <div class="face back"><a href="mission.html">
+            天天被迫接受各种任务，大概是永远做不完了</a></div>
+        </div>
+        <div id="box">
+            <div class="face front"><h3>游戏记录</h3></div>
+            <div class="face back"><a href="thinking.html">
+            这里的悲伤不只是令人绝望，而是绝望本身</a></div>
+        </div>
+        <div id="box">
+            <div class="face front"><h3>前进方向</h3></div>
+            <div class="face back"><a href="future.html">
+            未来怎么样谁都不知道，但是吹牛谁不会呢</a></div>
+        </div>
+        <div id="box">
+            <h3>······</h3>
+        </div>
+    </div>
+</body> 
+</html>
